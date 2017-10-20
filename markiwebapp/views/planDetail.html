@@ -1,0 +1,162 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Clients</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Plans</a>
+            </li>
+            <li class="active">
+                <strong>{{plan.title}}</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="ibox ">
+                <div class="ibox-content" id="ibox"ng-controller="planDetailCtrl">
+                    <div class="img-responsive" id="my-mask" style="position: relative;">
+                        <img id="my-plan" ng-if="fileIsimage" class="img-responsive" ng-src="{{file}}" width="{{pictureHtmlWidth}}px" height="auto"
+                            style="position: relative;top: 0; left:0;">
+                        <canvas class="img-responsive" ng-if="!fileIsimage" id="the-canvas" height="auto" style="position: relative;top: 0; left:0;"
+                        />
+                        <img id="newObservation"  src="appImages/add182.svg" height="{{observationHeight}}px"
+                            width="{{observationWidth}}px" style="position: absolute; z-index: 1;" ng-style="{'top':addButtonHeight, 'left':'65%'}">
+                        <img class="img-responsive" ng-click="selectedObservationIndex=1" ng-src="{{selectedObservationIndex == 1 && 'appImages/selected-observation.svg' || 'appImages/not-selected-observation.svg'}}"
+                            height="{{observationHeight}}px" width="{{observationWidth}}px" style="position: absolute;" ng-style="{'top':'-'+ observationHalfHeight + 'px', 'left':'-'+observationHalfWidth+'px'}">
+                        <img class="img-responsive" ng-click="selectedObservationIndex=2" ng-src="{{selectedObservationIndex == 2 && 'appImages/selected-observation.svg' || 'appImages/not-selected-observation.svg'}}"
+                            height="{{observationHeight}}px" width="{{observationWidth}}px" style="position: absolute;" ng-style="{'top':'calc(50% - '+ observationHalfHeight + 'px)', 'left':'calc(50% - '+ observationHalfWidth + 'px)'}">
+                        <img class="img-responsive" ng-click="selectedObservationIndex=3" ng-src="{{selectedObservationIndex == 3 && 'appImages/selected-observation.svg' || 'appImages/not-selected-observation.svg'}}"
+                            height="{{observationHeight}}px" width="{{observationWidth}}px" style="position: absolute;" ng-style="{'top':'calc(100% - '+ observationHalfHeight + 'px)', 'left':'calc(100% - '+ observationHalfWidth + 'px)'}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="ibox ">
+                <div class="ibox-content">
+                    <div class="tab-content">
+                        <div id="contact-1" class="tab-pane active">
+                            <div class="row m-b-lg">
+                                <div class="col-lg-12 text-center">
+                                    <strong>Paint defect to repair</strong>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <div class="m-b-sm">
+                                        <img alt="image" class="img-circle" src="img/a2.jpg" style="width: 62px">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <strong>Name : Wissem Ksouri</strong>
+                                    <br>
+                                    <strong>Job: Engineer</strong>
+                                </div>
+                            </div>
+                            <div class="client-detail">
+                                <div class="full-height-scroll" full-scroll>
+                                    <strong>Last activity</strong>
+                                    <ul class="list-group clear-list">
+                                        <li class="list-group-item fist-item">
+                                            <span class="pull-right"> electricité </span> Group
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="pull-right"> Pl1.00 </span> Plan
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="pull-right"> 15/11/2016</span> date
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="pull-right"> Open </span> State
+                                        </li>
+                                    </ul>
+                                    <hr/>
+                                    <div id="vertical-timeline" class="vertical-container dark-timeline">
+                                        <div class="vertical-timeline-block">
+                                            <div class="vertical-timeline-icon gray-bg">
+                                                <i class="fa fa-coffee"></i>
+                                            </div>
+                                            <div class="vertical-timeline-content">
+                                                <p>Conference on the sales results for the previous year.
+                                                </p>
+                                                <span class="vertical-date small text-muted"> 2:10 pm - 12.06.2014 </span>
+                                            </div>
+                                        </div>
+                                        <div class="vertical-timeline-block">
+                                            <div class="vertical-timeline-icon gray-bg">
+                                                <i class="fa fa-briefcase"></i>
+                                            </div>
+                                            <div class="vertical-timeline-content">
+                                                <p>Many desktop publishing packages and web page editors now use Lorem.
+                                                </p>
+                                                <span class="vertical-date small text-muted"> 4:20 pm - 10.05.2014 </span>
+                                            </div>
+                                        </div>
+                                        <div class="vertical-timeline-block">
+                                            <div class="vertical-timeline-icon gray-bg">
+                                                <i class="fa fa-bolt"></i>
+                                            </div>
+                                            <div class="vertical-timeline-content">
+                                                <p>There are many variations of passages of Lorem Ipsum available.
+                                                </p>
+                                                <span class="vertical-date small text-muted"> 06:10 pm - 11.03.2014 </span>
+                                            </div>
+                                        </div>
+                                        <div class="vertical-timeline-block">
+                                            <div class="vertical-timeline-icon navy-bg">
+                                                <i class="fa fa-warning"></i>
+                                            </div>
+                                            <div class="vertical-timeline-content">
+                                                <p>The generated Lorem Ipsum is therefore.
+                                                </p>
+                                                <span class="vertical-date small text-muted"> 02:50 pm - 03.10.2014 </span>
+                                            </div>
+                                        </div>
+                                        <div class="vertical-timeline-block">
+                                            <div class="vertical-timeline-icon gray-bg">
+                                                <i class="fa fa-coffee"></i>
+                                            </div>
+                                            <div class="vertical-timeline-content">
+                                                <p>Conference on the sales results for the previous year.
+                                                </p>
+                                                <span class="vertical-date small text-muted"> 2:10 pm - 12.06.2014 </span>
+                                            </div>
+                                        </div>
+                                        <div class="vertical-timeline-block">
+                                            <div class="vertical-timeline-icon gray-bg">
+                                                <i> <img alt="image" class="img-circle" src="img/a2.jpg" style="width: 40px"></i>
+                                            </div>
+                                            <div class="vertical-timeline-content">
+                                                <p>Many desktop publishing packages and web page editors now use Lorem.
+                                                </p>
+                                                <span class="vertical-date small text-muted"> 4:20 pm - 10.05.2014 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" ng-model="messageText" placeholder="Type a message" class="input-sm form-control">
+                            <span class="input-group-btn">
+                            <button type="submit" ng-if="messageText" class="btn btn-sm btn-primary">
+                            <span class="fa fa-chevron-right"></span>
+                            </button>
+                            <button type="submit" ng-if="!messageText" class="btn btn-sm btn-primary"> 
+                            <span class="fa fa-plus"></span>
+                             </button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

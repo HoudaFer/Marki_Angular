@@ -1,0 +1,63 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-4">
+        <h2>observation list</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="active">
+                <strong>observation list</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="wrapper wrapper-content animated fadeInUp">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>All observations assigned to this account</h5>
+                    <div class="ibox-tools">
+                        <a href="" class="btn btn-primary btn-xs">Create new observation</a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row m-b-sm m-t-sm">
+                        <div class="col-md-1">
+                            <button type="button" ng-click="$state.reload();" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> Refresh</button>
+                        </div>
+                        <div class="col-md-11">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" ng-model="searchTitle" placeholder="Search" class="input-sm form-control">
+                                    <span class="input-group-btn">
+                                                <button type="submit" ng-click="observationsSearch(searchTitle)" class="btn btn-sm btn-primary"> Go!</button> 
+                                        </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12" ng-controller="draggablePanels">
+        <div id="container">
+            <div ui-sortable="sortableOptions" class="tasks-container screen floatleft col-lg-5 col-md-5" ng-model="filtredTasks" ng-repeat="filtredTasks in listOfTasksLists">
+                <div id="observationTitle">
+                    <h1 style="margin:0;">{{tasksName[$index]}}</h1>
+                </div>
+                <div class="task" ng-repeat="task in filtredTasks">
+                    <div class="project-title">
+                        <a>{{$index}} {{task.title}} </a><br/>
+                        <small><p>{{task.state}}</p></small>
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+                    </div>
+                </div>
+                <a href>Add observation</a>
+            </div>
+        </div>
+    </div>
+</div>

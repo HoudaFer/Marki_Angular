@@ -1,0 +1,69 @@
+<nav class="navbar-default navbar-static-side" role="navigation" ng-controller="navigationCtrl" style="position: fixed;">
+    <div class="sidebar-collapse">
+        <ul side-navigation class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+
+                <div class="profile-element" uib-dropdown>
+                    <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                    <a uib-dropdown-toggle href>
+                        <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">David Williams</strong>
+                             </span>
+                        <span class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                        </span>
+                    </a>
+                    <ul uib-dropdown-menu class="animated fadeInRight m-t-xs">
+                        <li><a ui-sref="app.profile">{{'Profile' | translate}}</a></li>
+                        <li><a ui-sref="app.contacts">{{'Contacts' | translate}}</a></li>
+                        <li><a ui-sref="mailbox.inbox">{{'Mailbox' | translate}}</a></li>
+                        <li class="divider"></li>
+                        <li><a ui-sref="login">{{'Logout' | translate}}</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    IN+
+                </div>
+            </li>
+            <li ui-sref-active="active">
+                <a ng-click="goToPlansList()"><i class="fa fa-map-o" ></i> <span class="nav-label">{{'Plans' | translate}}</span></a>
+            </li>
+            <li ui-sref-active="active">
+                <a ng-click="goToObservationsList()"><i class="fa fa-thumb-tack"></i> <span class="nav-label">{{'Observations' | translate}}</span></a>
+            </li>
+            <li ui-sref-active="active">
+                <a ng-click="goToProjectsList()"><i class="fa fa-building"></i> <span class="nav-label">{{'Projects' | translate}}</span></a>
+            </li>
+            <li>
+                <a href=""><i class="fa fa-users"></i> <span class="nav-label">{{'Displayed groups' | translate}}</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="">exemple</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href=""><i class="fa fa-cog"></i> <span class="nav-label">{{'Options' | translate}}</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href=""><i class="fa fa-user-plus"></i>{{'Add users to this Projects' | translate}}</a></li>
+                    <li>
+                        <a href=""> <i class="fa fa-users"></i> {{'Groups' | translate}}</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-tags"></i>{{'Labels' | translate}}</a></li>
+                    <li>
+                        <a href="" ng-click="goToAddPlan()"><i class="fa fa-map-o"></i>{{'Add plan' | translate}}</a></li>
+                    <li>
+                        <a href=""><i class="fa fa-map-o"></i>{{'Add folder' | translate}}</a></li>
+                    <li>
+                        <a href=""> <i class="fa fa-building"></i>{{'New project' | translate}}</a>
+                    </li>
+                    <li>
+                        <a href=""> <i class="fa fa-file-text-o"></i> {{'Report' | translate}}</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>

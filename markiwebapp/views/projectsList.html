@@ -1,0 +1,63 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-4">
+        <h2>{{'Project list' | translate}}</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">{{'Home' | translate}}</a>
+            </li>
+            <li class="active">
+                <strong>{{'Project list' | translate}}</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="wrapper wrapper-content animated fadeInUp">
+
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>{{'All projects assigned to this account' | translate}}</h5>
+                    <div class="ibox-tools">
+                        <a href="" class="btn btn-primary btn-xs">{{'Create new project' | translate}}</a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row m-b-sm m-t-sm">
+                        <div class="col-md-1">
+                            <button type="button" ng-click="$state.reload();" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> {{'Refresh' | translate}}</button>
+                        </div>
+                        <div class="col-md-11">
+                            <form>
+                                <div class="input-group"><input type="text" ng-model="searchTitle" placeholder="{{'Search' | translate}}" class="input-sm form-control">
+                                    <span class="input-group-btn">
+                                  <button type="submit" ng-click="projectsSearch(searchTitle)" class="btn btn-sm btn-primary"> {{'Go!' | translate}}</button> 
+                                  </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="project-list">
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr ng-repeat="project in projectsList ">
+                                    <td class="project-status" ng-click="goToPlansList()">
+                                        <span class="label label-primary">{{'Active' | translate}}</span>
+                                    </td>
+                                    <td class="project-title" ng-click="goToPlansList()">
+                                        <a>{{project.title}}</a>
+                                        <br/>
+                                        <small>{{project.title}}</small>
+                                    </td>
+                                    <td class="project-actions">
+                                        <a ng-click="goToProjectDetail(project)" class="btn btn-white btn-sm"><i class="fa fa-folder"></i>  {{'View' | translate}}</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
