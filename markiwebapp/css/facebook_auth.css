@@ -1,0 +1,15 @@
+.btn-facebook {
+  color: #fff;
+  background-color: #3b5998;
+  border: 1px solid #335190;
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus {
+  color: #fff;
+  background-color: #294786;
+}
+
+.mainContainer {
+  height: 100%;
+}

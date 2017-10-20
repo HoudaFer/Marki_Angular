@@ -1,0 +1,166 @@
+.bg-primary {
+    background-color: #B3E5FC;
+}
+
+output {
+    color: #ffffff;
+}
+
+.form-control {
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #B3E5FC;
+}
+
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
+    background-color: #B3E5FC;
+}
+
+.btn-primary .badge {
+    color: #B3E5FC;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+    color: #B3E5FC;
+}
+
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus {
+    background-color: #B3E5FC;
+}
+
+.input-group-addon {
+    color: #ffffff;
+}
+
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
+    border-color: #B3E5FC;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    color: #ffffff;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus {
+    background-color: #B3E5FC;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
+    .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
+        color: #ffffff;
+    }
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    color: #B3E5FC;
+}
+
+.pagination>li>a:hover,
+.pagination>li>span:hover,
+.pagination>li>a:focus,
+.pagination>li>span:focus {
+    color: #B3E5FC;
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+    background-color: #B3E5FC;
+    border-color: #B3E5FC;
+}
+
+.label-primary {
+    background-color: #B3E5FC;
+}
+
+.list-group-item.active>.badge,
+.nav-pills>.active>a>.badge {
+    color: #B3E5FC;
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+    border-color: #B3E5FC;
+}
+
+.progress-bar {
+
+    background-color: #B3E5FC;
+}
+
+a.list-group-item,
+button.list-group-item {
+    color: #ffffff;
+}
+
+a.list-group-item:hover,
+button.list-group-item:hover,
+a.list-group-item:focus,
+button.list-group-item:focus {
+    color: #ffffff;
+}
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+    background-color: #B3E5FC;
+    border-color: #B3E5FC;
+}
+
+.panel-primary {
+    border-color: #B3E5FC;
+}
+
+.panel-primary>.panel-heading {
+    background-color: #B3E5FC;
+    border-color: #B3E5FC;
+}
+
+.panel-primary>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #B3E5FC;
+}
+
+.panel-primary>.panel-heading .badge {
+    color: #B3E5FC;
+}
+
+.panel-primary>.panel-footer+.panel-collapse>.panel-body {
+    border-bottom-color: #B3E5FC;
+}

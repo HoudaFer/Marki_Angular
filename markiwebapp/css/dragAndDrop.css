@@ -1,0 +1,52 @@
+/* ObservationList Css  for Drag and Drop*/
+
+.tasks-container {
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+  background: #e3dede;
+  border-radius: 3px;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 100%;
+  border-radius: 10px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.task {
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  cursor: move;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  float: center;
+  margin: 0 auto;
+}
+
+.floatleft {
+  float: left;
+  margin-top: 0px;
+}
+
+#observationTitle {
+  float: center;
+  color: white;
+  text-align: center;
+  background-color: #03A9F4;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+}
